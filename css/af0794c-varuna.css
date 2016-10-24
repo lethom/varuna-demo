@@ -1,0 +1,30 @@
+html, body, .fill {
+  height: 100%; }
+
+.varuna-editor-menu {
+  display: none; }
+
+.editor-head {
+  height: 25px; }
+  .editor-head div {
+    text-align: center;
+    color: #bebebe;
+    font-variant: small-caps; }
+
+.editor-main {
+  height: calc(100% - 25px); }
+
+.varuna-textarea {
+  border: 0; }
+
+.varuna-renderer {
+  border: 0;
+  border-left: 1px solid #cecece;
+  overflow: scroll; }
+  .varuna-renderer article {
+    max-width: 450px;
+    margin: auto;
+    font-family: Georgia;
+    text-align: justify; }
+  .varuna-renderer p {
+    text-indent: 1em; }
