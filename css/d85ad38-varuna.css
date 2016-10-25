@@ -1,0 +1,71 @@
+html, body, .fill {
+  height: 100%; }
+
+.varuna-editor-menu {
+  display: none; }
+
+.editor-head {
+  height: 25px; }
+  .editor-head div {
+    text-align: center;
+    color: #bebebe;
+    font-variant: small-caps; }
+
+.editor-main {
+  height: calc(100% - 25px); }
+
+.varuna-textarea {
+  border: 0; }
+
+.varuna-renderer {
+  border: 0;
+  border-left: 1px solid #cecece; }
+  .varuna-renderer article {
+    height: calc(100% - 4px);
+    overflow: scroll;
+    font-family: Georgia;
+    text-align: justify;
+    margin-top: 1em; }
+    .varuna-renderer article div {
+      margin: auto;
+      max-width: 450px; }
+  .varuna-renderer p {
+    text-indent: 1em; }
+
+.loader {
+  height: 4px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: white; }
+
+.loaded {
+  height: 4px;
+  width: 100%;
+  overflow: hidden;
+  background-color: white; }
+
+.loader:before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  background-color: #11ddd7;
+  animation: loading 2s linear infinite; }
+
+@keyframes loading {
+  from {
+    left: -200px;
+    width: 30%; }
+  50% {
+    width: 30%; }
+  70% {
+    width: 70%; }
+  80% {
+    left: 50%; }
+  95% {
+    left: 120%; }
+  to {
+    left: 100%; } }
